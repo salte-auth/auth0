@@ -19,7 +19,7 @@ describe('Auth0', () => {
 
       const url = new URL(auth0.$login());
 
-      expect(`${url.protocol}//${url.host}${url.pathname}`).to.equal('https://salte-os.auth0.com/authorize');
+      expect(`${url.protocol}//${url.hostname}${url.pathname}`).to.equal('https://salte-os.auth0.com/authorize');
       expect(url.searchParams.get('client_id')).to.equal('12345');
       expect(url.searchParams.get('response_type')).to.equal('id_token');
       expect(url.searchParams.get('redirect_uri')).to.equal(location.origin);
@@ -42,7 +42,7 @@ describe('Auth0', () => {
 
       const url = new URL(auth0.logout);
 
-      expect(`${url.protocol}//${url.host}${url.pathname}`).to.equal('https://salte-os.auth0.com/v2/logout');
+      expect(`${url.protocol}//${url.hostname}${url.pathname}`).to.equal('https://salte-os.auth0.com/v2/logout');
       expect(url.searchParams.get('client_id')).to.equal('12345');
       expect(url.searchParams.get('returnTo')).to.equal(location.origin);
     });
