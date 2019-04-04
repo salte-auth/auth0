@@ -44,7 +44,8 @@ module.exports = function({ minified, es6, coverage, tests, server }) {
       commonjs({
         namedExports: {
           'chai': [ 'expect' ],
-          '@salte-auth/salte-auth': ['SalteAuth', 'SalteAuthError', 'OAuth2Provider', 'OpenIDProvider', 'Handler', 'Utils', 'Generic']
+          '@salte-auth/salte-auth': ['SalteAuth', 'SalteAuthError', 'OAuth2Provider', 'OpenIDProvider', 'Handler', 'Utils', 'Generic'],
+          '@salte-auth/redirect': ['Redirect']
         }
       }),
       glob(),

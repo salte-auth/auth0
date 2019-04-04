@@ -7,8 +7,8 @@ const auth = new SalteAuth({
     new Auth0({
       url: 'https://salte-os.auth0.com',
 
-      clientID: '6HXbmGnu4145AE0jLZO1Q01WX53cLI48',
-      responseType: 'id_token',
+      clientID: '9JTBXBREtckkFHTxTNBceewrnn7NeDd0',
+      responseType: 'id_token token',
 
       routes: true
     })
@@ -21,10 +21,9 @@ const auth = new SalteAuth({
   ]
 });
 
-const button = document.createElement('button');
-button.innerHTML = `Login`;
-button.addEventListener('click', () => {
-  auth.login('auth0');
+const logoutButton = document.createElement('button');
+logoutButton.innerHTML = `Logout`;
+logoutButton.addEventListener('click', () => {
+  auth.logout('auth0');
 });
-
-document.body.appendChild(button);
+document.body.appendChild(logoutButton);
