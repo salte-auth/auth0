@@ -6,6 +6,17 @@ const { expect } = chai;
 chai.use(chaiString);
 
 describe('Auth0', () => {
+  describe('getter(name)', () => {
+    it('should be "auth0"', () => {
+      const auth0 = new Auth0({
+        clientID: '12345',
+        responseType: 'token'
+      });
+
+      expect(auth0.name).to.equal('auth0');
+    });
+  });
+
   describe('getter(login)', () => {
     it('should construct a login url', () => {
       const auth0 = new Auth0({
