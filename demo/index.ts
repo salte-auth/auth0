@@ -8,7 +8,6 @@ const auth = new SalteAuth({
       url: 'https://salte-os.auth0.com',
 
       clientID: '9JTBXBREtckkFHTxTNBceewrnn7NeDd0',
-      responseType: 'id_token token',
 
       routes: true
     })

@@ -5,7 +5,7 @@
 <h2 align="center">
   <div>
     <a href="https://github.com/salte-auth/auth0">
-      <img height="190px" src="https://raw.githubusercontent.com/salte-auth/logos/master/images/logo.svg?sanitize=true">
+      <img height="180px" src="https://raw.githubusercontent.com/salte-auth/logos/master/images/logo.svg?sanitize=true">
       <br>
       <br>
       <img height="50px" src="https://raw.githubusercontent.com/salte-auth/logos/master/images/%40salte-auth/auth0.svg?sanitize=true">
@@ -50,11 +50,18 @@ import { SalteAuth } from '@salte-auth/salte-auth';
 import { Auth0 } from '@salte-auth/auth0';
 import { Redirect } from '@salte-auth/redirect';
 
+/* 
+ * Feel free to try out Salte Auth with this configuration!
+ * 
+ * It should work with the following domains:
+ * - glitch.com
+ * - localhost:8081
+ */
 const auth = new SalteAuth({
   providers: [
     new Auth0({
-      url: 'https://salte.auth0.com',
-      clientID: '12345'
+      url: 'https://salte-os.auth0.com',
+      clientID: '9JTBXBREtckkFHTxTNBceewrnn7NeDd0'
     })
   ],
 
