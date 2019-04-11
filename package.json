@@ -71,8 +71,7 @@
     "url-polyfill": "^1.1.5"
   },
   "publishConfig": {
-    "access": "public",
-    "tag": "next"
+    "access": "public"
   },
   "husky": {
     "hooks": {
