@@ -1,6 +1,7 @@
 {
   "name": "@salte-auth/auth0",
   "version": "3.0.0",
+  "browser": "dist/auth0.min.js",
   "main": "dist/auth0.min.js",
   "module": "dist/auth0.min.mjs",
   "types": "dist/auth0.d.ts",
