@@ -5,17 +5,17 @@ export class Auth0 extends OpenIDProvider {
     super(config);
   }
 
-  public get name() {
+  public get name(): string {
     return 'auth0';
   }
 
-  public get login() {
+  public get login(): string {
     return this.url(`${this.config.url}/authorize`, {
       audience: this.config.audience
     });
   }
 
-  public get logout() {
+  public get logout(): string {
     return this.url(`${this.config.url}/v2/logout`, {
       returnTo: this.redirectUrl('logout'),
       client_id: this.config.clientID
